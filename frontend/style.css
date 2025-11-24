@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background: #0d0f16;
+    color: white;
+}
+
+.glass-nav {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: fixed;
+    top: 0;
+}
+
+.glass-nav .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ff914d;
+}
+
+.glass-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-right: 100px;
+}
+
+.glass-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+
+.page {
+    padding: 120px 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.hero {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 160px;
+    background: linear-gradient(90deg, #8c52ff, #ff914d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.subtitle {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    color: #e2a9f1;
+    animation: fadeIn 1.4s ease-in-out;
+}
+
+
+.glass-btn {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.glass-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px #8fd3ff;
+}
+
+/* Prediction Card */
+.card {
+    width: 95%;
+    max-width: 900px;
+    margin: 40px auto ;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    margin-top: 30px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    filter: drop-shadow(0 0 6px #cb6ce6aa);
+}
+
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e2a9f1;
+    -webkit-background-clip: text;
+}
+
+
+.result-card {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Title inside card */
+.result-card h3 {
+    color: #ffffff !important; 
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+}
+
+
+.result-card .price {
+    font-size: 36px;
+    font-weight: 900;
+    color: #4eff9c;              
+
+    text-align: center;         
+    display: block;            
+    margin-top: 5px;
+
+    text-shadow: 0 0 12px rgba(78, 255, 156, 0.4);
+}
+
