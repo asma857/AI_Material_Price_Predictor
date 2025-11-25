@@ -15,6 +15,7 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.1);
     position: fixed;
     top: 0;
+    
 }
 
 .glass-nav .logo {
@@ -72,18 +73,24 @@ body {
     animation: fadeIn 1.4s ease-in-out;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 
 .glass-btn {
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
     padding: 15px 35px;
     font-size: 20px;
-    border-radius: 12px;
+    border: 0;
+    border-radius: 25px;
     color: white;
     cursor: pointer;
     backdrop-filter: blur(10px);
     transition: 0.3s;
     margin-top: 15px;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    
 }
 
 .glass-btn:hover {
@@ -115,15 +122,6 @@ select {
     margin-top: 10px;
     border-radius: 8px;
 }
-
-
-
-/* Fade Animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
 
 
 
@@ -182,5 +180,21 @@ select {
     margin-top: 5px;
 
     text-shadow: 0 0 12px rgba(78, 255, 156, 0.4);
+}
+
+
+
+#flowTransition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(135deg, #8c52ff, #ff914d);
+    z-index: 9999;
+    transition: height 0.8s ease-in-out;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    pointer-events: none;
 }
 
