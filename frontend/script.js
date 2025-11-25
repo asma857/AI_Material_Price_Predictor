@@ -146,5 +146,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+function startFlowTransition() {
+    const flow = document.getElementById("flowTransition");
+
+    // Expand flow overlay
+    flow.style.height = "100%";
+
+    // After animation → switch page
+    setTimeout(() => {
+        openPage("predict");
+        
+        // Close flow (return to 0)
+        flow.style.height = "0%";
+    }, 900);
+}
 
 
