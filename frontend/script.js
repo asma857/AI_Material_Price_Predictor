@@ -160,5 +160,3 @@ function startFlowTransition() {
         flow.style.height = "0%";
     }, 900);
 }
-
-
